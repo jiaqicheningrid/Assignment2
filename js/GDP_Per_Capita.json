@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "World GDP per capita (2019) & Top 10 GDP Country",
+  "title": "World GDP per capita (2019) & Top 5 GDP Country",
   "autosize": "fit",
   "width": 800,
   "height": 400,
@@ -11,7 +11,7 @@
         "url": "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/js/ne_110m_admin_0_countries.json",
         "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
       },
-      "mark": {"type": "geoshape", "stroke": "black", "color": "#cbcecf"}
+      "mark": {"type": "geoshape", "stroke": "white", "color": "#cbcecf"}
     },
     {
       "data": {
@@ -40,14 +40,15 @@
           "scale": {
             "type": "threshold",
             "domain": [1000, 15000, 30000, 50000],
-            "range": ["#c6dbef", "#6baed6", "#2171b5", "#08519c", "#08306b"]
+            "range": ["#feebe2", "#fbb4b9", "#f768a1", "#c51b8a", "#7a0177"]
           }
         },
         "tooltip": [
           {
             "field": "2019",
             "type": "quantitative",
-            "title": "GDP Per Capita(US$)"
+            "title": "GDP Per Capita(US$)",
+            "color":"red"
           },
           {"field": "properties.NAME", "type": "nominal", "title": "Country"}
         ]
@@ -87,7 +88,7 @@
         "longitude": {"field": "Longitude", "type": "quantitative"},
         "latitude": {"field": "Latitude", "type": "quantitative"},
         "text": {"field": "properties.NAME", "type": "nominal"},
-        "color": {"value": "red"}
+        "color": {"value": "black"}
       }
     }
   ],
