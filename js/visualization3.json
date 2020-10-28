@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "The Change of World GDP per capita Between 2015 to 2019 For Top 5 Highest GDP Countries"
+  "title": "The Change of World GDP per capita Between 2015 to 2019 For Top 5 Highest GDP Countries",
   "width":700,
   "height":400,
   "data": {
