@@ -53,43 +53,27 @@
         ]
       }
     },
-    {
-      "data": {
-        "url": "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/js/ne_110m_admin_0_countries.json",
-        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
-      },
-      "transform": [
-        {
-          "lookup": "properties.NAME",
-          "from": {
-            "data": {
-              "url": "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/data/location.csv"
+    {"data": {
+              "url": "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/data/Location.csv"
             },
-            "key": "Country Name",
-            "fields": ["Longitude", "Latitude"]
-          }
-        },
-        {
-          "filter": {
-            "field": "properties.NAME",
-            "oneOf": [
+       "transform": [ {"filter":{
+            "field": "Country",
+            "oneOf":[
               "China",
               "India",
               "United States of America",
               "Japan",
               "Germany"
             ]
-          }
-        }
-      ],
+          }}],
       "mark": {"type": "text"},
+      
       "encoding": {
         "longitude": {"field": "Longitude", "type": "quantitative"},
         "latitude": {"field": "Latitude", "type": "quantitative"},
-        "text": {"field": "properties.NAME", "type": "nominal"},
+        "text": {"field": "Country", "type": "nominal"},
         "color": {"value": "red"}
       }
     }
-  ],
-  "config": {}
+  ]
 }
