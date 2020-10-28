@@ -112,12 +112,14 @@ a:hover
     font-size: 1em;
     color: #030007;
     font-weight: lighter;
+    overflow: hidden;
+    margin: 0em auto;
 }
 
 .v1 h1
 {
     text-align: center;
-    font-size: 4em;
+    font-size: 3.5em;
     color: #09acec;
     font-weight: lighter;
 }
@@ -146,27 +148,33 @@ a:hover
     font-size: 1em;
     color: #030007;
     font-weight: lighter;
+    overflow: hidden;
+    margin: 0em auto;
+}
+
+.v2 h1
+{
+    text-align: center;
+    font-size: 3.5em;
+    color: #09acec;
+    font-weight: lighter;
 }
 
 .v2 #visualisation2{
-    position:  relative;
-    text-align: center;
-    right: 10em;
-    bottom: -2em;
-    font-size: 1em;
-    color: #030007;
-    font-weight: lighter; 
+    position: absolute;
+    left: 0em;
+    bottom: -25em;
 }
 
 .v2 #part2{
-    position: absolute;
-    bottom: -60em;
-    right: 0em;
-    text-align: center;
+    position: relative;
+    bottom: 0em;
+    margin-right: 20em;
+    text-align: right;
     font-size: 1em;
-    color: #030007;
-    font-weight: lighter; 
-    width: 300px;
+    margin-top: 3em;
+    color: #000000;
+    font-weight: lighter;
 }
 
 .v3{
@@ -176,50 +184,59 @@ a:hover
     font-size: 1em;
     color: #030007;
     font-weight: lighter;
+    overflow: hidden;
+    margin: 0em auto;
+}
+
+.v3 h1
+{
+    text-align: center;
+    font-size: 3.5em;
+    color: #09acec;
+    font-weight: lighter;
 }
 
 .v3 #visualisation3{
-    position:  relative;
-    text-align: center;
-    left: 10em;
-    bottom: -2em;
-    font-size: 1em;
-    color: #030007;
-    font-weight: lighter; 
+    position: absolute;
+    right: 0em;
+    bottom: -28em;
 }
 
 .v3 #part3{
-    position: absolute;
-    text-align: center;
+    position: relative;
+    bottom: 0em;
+    margin-left: 4em;
+    text-align: left;
     font-size: 1em;
-    color: #030007;
-    font-weight: lighter; 
-    width: 300px;
+    margin-top: 3em;
+    color: #000000;
+    font-weight: lighter;
 }
 
 .v4{
     width: 1400px;
-    height: 600px;
+    height: 800px;
     text-align: center;
     font-size: 1em;
     color: #030007;
     font-weight: lighter;
+    overflow: hidden;
+    margin: 0em auto;
 }
 
 .v4 h1
 {
     text-align: center;
-    font-size: 4em;
+    font-size: 3.5em;
     color: #09acec;
     font-weight: lighter;
 }
 
 .v4 #part4 ul
 {   position: relative;
-    bottom: 10em;
+    bottom: 16em;
     text-align: center;
     font-size: 1em;
-    margin-top: 1em;
     color: #000000;
     font-weight: lighter;
 }
@@ -228,7 +245,4 @@ a:hover
     position: relative;
     text-align: center;
     bottom: -2em;
-    font-size: 1em;
-    color: #030007;
-    font-weight: lighter; 
 }
