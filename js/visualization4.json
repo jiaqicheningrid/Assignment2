@@ -1,0 +1,203 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "World GDP per capita (2019) vs GDP By Population",
+  "autosize": "fit",
+  "width": 1000,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/data/population_vs_economy.csv"
+  },
+  "params": [
+    {
+      "name": "Population",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 50000000,
+        "max": 400000000,
+        "step": 50000000,
+        "name": "Population Filter: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": {
+        "field": "Country Name",
+        "oneOf": [
+          "United States of America",
+          "China",
+          "Japan",
+          "Germany",
+          "India",
+          "Canada",
+          "Brazil",
+          "Italy",
+          "France",
+          "United Kingdom",
+          "Russia",
+          "Korea, Rep.",
+          "Spain",
+          "Australia",
+          "Mexico",
+          "Indonesia",
+          "Netherlands",
+          "Saudi Arabia",
+          "Turkey",
+          "Switzerland"
+        ]
+      }
+    },
+    {"filter": "datum.Population > Population"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "GDP(million)",
+      "type": "quantitative",
+      "title": "GDP (millions U$dollor)",
+      "axis": {"tickCount": 4}
+    },
+    "y": {
+      "field": "GDP Per Capita (U$dollor)",
+      "type": "quantitative",
+      "title": "GDP Per Capita (U$dollor)",
+      "axis": {"tickCount": 3}
+    }
+  },
+  "layer": [
+    {
+      "selection": {
+        "Country Name_highlight": {
+          "type": "multi",
+          "fields": ["Country Name"],
+          "bind": "legend"
+        }
+      },
+      "mark": "circle",
+      "encoding": {
+        "size": {
+          "field": "Population",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [100000000, 500000000, 1000000000, 10000000000],
+            "range": [300, 750, 1000, 1250, 1500]
+          },
+          "legend": {"orient": "bottom-right", "format": ".1s"}
+        },
+        "color": {
+          "field": "Country Name",
+          "type": "nominal",
+          "legend": {"orient": "left"},
+          "scale": {
+            "domain": [
+              "United States of America",
+              "China",
+              "India",
+              "Canada",
+              "Brazil",
+              "Italy",
+              "France",
+              "United Kingdom",
+              "Russia",
+              "Korea, Rep.",
+              "Spain",
+              "Australia",
+              "Mexico",
+              "Indonesia",
+              "Netherlands",
+              "Saudi Arabia",
+              "Turkey",
+              "Switzerland"
+            ],
+            "range": [
+              "#a50f15",
+              "#54278f",
+              "#253494",
+              "#67000d",
+              "#000000",
+              "#67001f",
+              "#006d2c",
+              "#7a0177",
+              "#e7298a",
+              "#02818a",
+              "#993404",
+              "#fb9a99",
+              "#e31a1c",
+              "#238b45",
+              "#fc9272",
+              "#3f007d",
+              "#377eb8",
+              "#252525"
+            ]
+          }
+        },
+        "opacity": {
+          "condition": {"selection": "Country Name_highlight", "value": 1},
+          "value": 0.1
+        },
+        "tooltip": [
+          {"field": "Country Name", "type": "nominal", "title": "Country"},
+          {
+            "field": "Population",
+            "type": "quantitative",
+            "title": "Population"
+          },
+          {
+            "field": "GDP Per Capita (U$dollor)",
+            "type": "quantitative",
+            "title": "GDP PerCapita"
+          },
+          {
+            "field": "GDP (millions U$dollor)",
+            "type": "quantitative",
+            "title": "GDP (millions U$dollor)",
+            "format": "1s"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "line-top",
+        "dx": -20,
+        "dy": -31,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "Population", "type": "quantitative"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+            "test": "datum['Country Name'] == 'China' || datum['Country Name'] =='United States of America' || datum['Country Name'] == 'India' || datum['Country Name'] == 'Switzerland'",
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Country Name", "type": "nominal", "title": "Country"},
+          {
+            "field": "Population",
+            "type": "quantitative",
+            "title": "Population"
+          },
+          {
+            "field": "GDP Per Capita (U$dollor)",
+            "type": "quantitative",
+            "title": "GDP PerCapita"
+          },
+          {
+            "field": "GDP (millions U$dollor)",
+            "type": "quantitative",
+            "title": "GDP (millions U$dollor)",
+            "format": "1s"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {}
+}

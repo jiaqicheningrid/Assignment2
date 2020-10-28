@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "World GDP per capita (2019) & Top 10 GDP Country",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/data/visualization3.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "Country_Name",
+        "oneOf": [
+          "United States of America",
+          "China",
+          "Japan",
+          "Germany",
+          "India"
+        ]
+      }
+    }
+  ],
+  "layer": [
+    {
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "timeUnit": "year",
+          "type": "temporal",
+          "title": "Year"
+        },
+        "y": {
+          "field": "GDP_Per",
+          "type": "quantitative",
+          "title": "GDP Per Capital (US$)"
+        },
+        "color": {"field": "Country_Name", "type": "nominal"},
+        "opacity": {
+          "condition": {"selection": "highlightCountry", "value": 1},
+          "value": 0.2
+        }
+      },
+      "layer": [
+        {
+          "selection": {
+            "highlightCountry": {
+              "type": "multi",
+              "fields": ["Country_Name"],
+              "bind": "legend"
+            }
+          },
+          "mark": "line"
+        },
+        {
+          "selection": {
+            "labelLine": {
+              "type": "single",
+              "nearest": true,
+              "on": "mouseover",
+              "encodings": ["x"],
+              "empty": "none"
+            }
+          },
+          "mark": "point",
+          "encoding": {
+            "opacity": {
+              "condition": {"selection": "labelLine", "value": 1},
+              "value": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "transform": [{"filter": {"selection": "labelLine"}}],
+      "layer": [
+        {
+          "mark": {"type": "rule", "color": "gray"},
+          "encoding": {"x": {"type": "temporal", "field": "Year"}}
+        },
+        {
+          "encoding": {
+            "text": {"type": "quantitative", "field": "GDP_Per"},
+            "x": {"type": "temporal", "field": "Year"},
+            "y": {"type": "quantitative", "field": "GDP_Per"}
+          },
+          "layer": [
+            {
+              "mark": {"type": "text", "align": "left", "dx": 5, "dy": -7},
+              "encoding": {
+                "color": {"type": "nominal", "field": "Country_Name"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "config": {}
+}
