@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "The Change of World GDP per capita Between 2015 to 2019 For Top 5 Highest GDP Countries",
-  "width":700,
-  "height":400,
+  "width": 700,
+  "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/data/visualization3.csv"
   },
@@ -27,13 +27,14 @@
           "field": "Year",
           "timeUnit": "year",
           "type": "temporal",
-          "title": "Year","axis": {"tickCount": 4}
+          "title": "Year",
+          "axis": {"tickCount": 4}
         },
         "y": {
           "field": "GDP_Per",
           "type": "quantitative",
-          "title": "GDP Per Capital (US$)",
-          "title": "Year","axis": {"tickCount": 9}
+          "title": "GDP Per Capita (U$dollor)",
+          "axis": {"tickCount": 9}
         },
         "color": {"field": "Country_Name", "type": "nominal"},
         "opacity": {
