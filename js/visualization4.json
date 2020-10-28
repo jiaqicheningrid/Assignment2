@@ -151,7 +151,7 @@
             "title": "GDP Per Capita (U$dollor)"
           },
           {
-            "field": "GDP (millions U$dollor)",
+            "field": "GDP(million)",
             "type": "quantitative",
             "title": "GDP (millions U$dollor)",
             "format": "1s"
