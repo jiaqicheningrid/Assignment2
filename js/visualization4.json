@@ -13,9 +13,9 @@
       "value": 0,
       "bind": {
         "input": "range",
-        "min": 50000000,
+        "min": 8000000,
         "max": 400000000,
-        "step": 50000000,
+        "step": 10000000,
         "name": "Population Filter: "
       }
     }
