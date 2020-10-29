@@ -36,7 +36,27 @@
           "title": "GDP Per Capita (U$dollor)",
           "axis": {"tickCount": 9}
         },
-        "color": {"field": "Country_Name", "type": "nominal","legend": {"orient": "left"}},
+        "color": {
+          "field": "Country_Name",
+          "type": "nominal",
+          "legend": {"orient": "left"},
+          "scale":{
+                        "domain": [
+          "United States of America",
+          "China",
+          "Japan",
+          "Germany",
+          "India"
+            ],
+            "range": [
+              "#a50f15",
+              "#54278f",
+              "#f03b20",
+              "#006d2c",
+              "#000000"
+            ]
+          }
+        },
         "opacity": {
           "condition": {"selection": "highlightCountry", "value": 1},
           "value": 0.2
@@ -68,15 +88,20 @@
             "opacity": {
               "condition": {"selection": "labelLine", "value": 1},
               "value": 0
-            },"tooltip": [
-          {
-            "field": "Year",
-            "type": "temporal",
-            "title": "Year",
-            "timeUnit": "year"
-          },
-          {"field": "GDP_Per", "type": "quantitative", "title": "GDP Per Capita (U$dollor)"}
-        ]
+            },
+            "tooltip": [
+              {
+                "field": "Year",
+                "type": "temporal",
+                "title": "Year",
+                "timeUnit": "year"
+              },
+              {
+                "field": "GDP_Per",
+                "type": "quantitative",
+                "title": "GDP Per Capita (U$dollor)"
+              }
+            ]
           }
         }
       ]
