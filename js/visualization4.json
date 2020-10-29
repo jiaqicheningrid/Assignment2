@@ -115,19 +115,19 @@
             "range": [
               "#a50f15",
               "#54278f",
-              "#253494",
-              "#980043",
-              "#000000",
-              "#08306b",
+              "#f03b20",
               "#006d2c",
+              "#000000",
+              "#fc9272",
+              "#08306b",
+              "#fb9a99",
               "#7a0177",
               "#e7298a",
               "#02818a",
               "#810f7c",
-              "#fb9a99",
+              "#980043",
               "#e31a1c",
-              "#238b45",
-              "#fc9272",
+              "#253494",
               "#3f007d",
               "#fc4e2a",
               "#252525"
@@ -143,7 +143,8 @@
           {
             "field": "Population",
             "type": "quantitative",
-            "title": "Population","format": "1s"
+            "title": "Population",
+            "format": "1s"
           },
           {
             "field": "GDP Per Capita (U$dollor)",
