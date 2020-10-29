@@ -28,6 +28,9 @@
                 <li>
                     <a href="#title4">With_Population</a>
                 </li>
+                <li>
+                    <a href="#title5">Compare_GDP</a>
+                </li>
             </ul>
         </nav>
         <section class="picture_text">
@@ -41,19 +44,19 @@
     <div class = "v1">
         <h1 id = "title1">World GDP in 2019</h1>
         <div id ="part1">  
-            <ul>
-                <li>
-                    The most common part for GDP Capita in 2019 is the range between 1000 to 15000
-                </li>
-                <li>
-                    The most common part for GDP Capita in 2019 is the range between 1000 to 15000
-                </li>
-                <li>
-                    The most common part for GDP Capita in 2019 is the range between 1000 to 15000
-                </li>
-            </ul>
-            <article id="visualisation1">           
-            </article>
+            <p>
+                This map shows the GDP in each country in 2019. It is clear shows the spatial distribution in the world.  
+            </p>
+            <p>
+                The GDP of most counrties is below than 1000000 (1M in legend) million dollors.
+            </p>
+            <p>
+                Just three counrties which are China, Japan and USA has GDP higher than 5000000 (5M in map) million dollors.
+            </p>
+            <p>
+                Almost Africa country's GDP is below than 100000 (100k in legend) million dollors. 
+            </p>
+            <article id="vis1"></article>
         </div>
     </div>
     <hr id="divide"/>
@@ -62,68 +65,108 @@
                     World GDP Per Capita in 2019
                 </h1>
         <div id ="part2">
-            <p id ="text2">
-             ....
+            <p>
+             The maximum distribution of GDP Per Capita in the wrold is between 15000 to 1000 dollors. and main place is in South America, Africa and Asia. 
             </p>
-            <article id="visualisation2">
+            <p>
+                The text of country is the five countries with the highest GDP. Different with USA, Germany and Japan, the World GDP Per Capita of China and India are lower than 15000 dollors. 
+            </p>
+            <p>
+                Africa's GDP per capita is basically very low. North America's GDP per capita is very high.
+            </p>
+            <article id="vis2">
             </article>
         </div>
     </div>
     <hr id="divide"/>
     <div class ="v3">
         <h1 id ="title3">
-            World GDP Per Capita From 2015 to 2019
+            The Population v.s. Economy
         </h1>
         <div id ="part3">
-            <p id ="text3">
-                ...
+            <p>
+                This diagram shows the distribution when the GDP compare with GDP Per Capita and the relationship with population.
             </p>
-            <article id="visualisation3">
+            <p>
+                The trend of this diagram is the GDP Per Capita is higher, the GDP also is higher. 
+                Also, it shows smaller population has higher GDP Per Capita. Almost countries fit these two trends. 
+            </p>
+            <p>
+                Most countries's population are lower than 100000000 (100M in legend).
+            </p>
+            <p>
+                However, there are two outliers which are just meet one of the trend. China is the second highest GDP country, but the GDP Per Capita is so low. 
+                The Switzerland has lower GDP in these 20 countries, but it has highest GDP Per Capita. 
+            </p>
+            <article id="vis3">
             </article>
         </div>
     </div>
     <hr id="divide"/>
     <div class = "v4">
-        <h1 id = "title4">The Population v.s. Economy</h1>
+        <h1 id = "title4">World GDP Per Capita From 2015 to 2019</h1>
         <div id ="part4">  
-            <article id="visualisation4">           
+            <article id="vis4">           
             </article>
-            <ul>
-                <li>
-                    The most common part for GDP Capita in 2019 is the range between 1000 to 15000
-                </li>
-                <li>
-                    The most common part for GDP Capita in 2019 is the range between 1000 to 15000
-                </li>
-                <li>
-                    The most common part for GDP Capita in 2019 is the range between 1000 to 15000
-                </li>
-            </ul>
-
+            <p>
+                In this diagram, China and India's GDP Per Capita is keep lowest in these five countries in recent 5 years. Compare with other countries, India's data is keep steady, basically no ups and downs.
+            </p>
+            <p>
+                Germany get the peak in 2017 then start decrease in 2018. 
+            </p>
+            <p>
+                USA's data is keep up the upward trend
+            </p>
+            <p>
+                There is a big gap between the first three countries and the last two.
+            </p>
         </div>
     </div>
     <hr id="divide"/>
-    <footer style="text-align: center">
-        <p>By Jiaqi Chen
-           FIT3179 Assignment2</p>
-    </footer>
-
+    <div class = "v5">
+        <h1 id = "title5">Compare GDP</h1>
+        <div id ="part5">  
+            <article id="vis5"></article>
+            <p>
+                In this diagram, USA's GDP is the highest one and there is a big gap with other countries, even the second highest country.
+            </p>
+            <p>
+                The different between highest one (USA) and lowest one (Canada) is about 20 million dollors.
+            </p>
+            <p>
+                China also has big different between other countries. 
+            </p>
+            <p>
+                There is no very observe different between India, UK and France.
+            </p>
+        </div>
+    </div>
+    <hr id="divide"/>
     <script type="text/javascript">
-        var visualisation1 = "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/js/visualization1.json";
-        vegaEmbed('#visualisation1', visualisation1).then(function(result) { 
+        var vis1 = "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/js/visualization1.json";
+        vegaEmbed('#vis1', vis1).then(function(result) { 
         }).catch(console.error);
 
-        var visualisation2 = "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/js/visualization2.json";
-        vegaEmbed('#visualisation2', visualisation2).then(function(result) { 
+        var vis2 = "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/js/visualization2.json";
+        vegaEmbed('#vis2', vis2).then(function(result) { 
         }).catch(console.error);
 
-        var visualisation3 = "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/js/visualization3.json";
-        vegaEmbed('#visualisation3', visualisation3).then(function(result) { 
+        var vis3 = "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/js/visualization3.json";
+        vegaEmbed('#vis3', vis3).then(function(result) { 
         }).catch(console.error);
 
-        var visualisation4 = "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/js/visualization4.json";
-        vegaEmbed('#visualisation4', visualisation4).then(function(result) { 
+        var vis4 = "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/js/visualization4.json";
+        vegaEmbed('#vis4', vis4).then(function(result) { 
+        }).catch(console.error);
+
+        var vis5 = "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/js/visualization5.json";
+        vegaEmbed('#vis5', vis5).then(function(result) { 
         }).catch(console.error);
     </script>
 </body>
+<footer style="text-align: center">
+    <p>By Jiaqi Chen
+       FIT3179 Assignment2
+    </p>
+</footer>
 </html>
