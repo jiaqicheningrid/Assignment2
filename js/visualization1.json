@@ -39,18 +39,14 @@
           "type": "quantitative",
           "title": "GDP(Million US$)",
           "legend": {"orient": "bottom-left", "format": ".1s"},
-          "scale": {
-            "type": "threshold",
-            "domain": [1000000, 5000000, 13000000]
-          }
+          "scale": {"type": "threshold", "domain": [100000,1000000, 5000000]}
         },
         "color": {"value": "red"},
         "tooltip": [
           {
             "field": "GDP (millions)",
             "type": "quantitative",
-            "title": "GDP(Million US$)",
-            "format": "1s"
+            "title": "GDP(Million US$)"
           },
           {"field": "properties.NAME", "type": "nominal", "title": "Country"}
         ]
