@@ -25,7 +25,7 @@
             "data": {
               "url": "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/data/gdp_vs_economy.csv"
             },
-            "key": "Country Name",
+            "key": "Country_Name",
             "fields": ["GDP (millions)", "Longitude", "Latitude"]
           }
         }
@@ -39,7 +39,7 @@
           "type": "quantitative",
           "title": "GDP(Million US$)",
           "legend": {"orient": "bottom-left", "format": ".1s"},
-          "scale": {"type": "threshold", "domain": [100000,1000000, 5000000]}
+          "scale": {"type": "threshold", "domain": [100000, 1000000, 5000000]}
         },
         "color": {"value": "red"},
         "tooltip": [
