@@ -80,7 +80,7 @@
           "type": "quantitative",
           "scale": {
             "type": "threshold",
-            "domain": [100000000, 500000000, 1000000000, 10000000000],
+            "domain": [100000000, 500000000, 1000000000],
             "range": [300, 750, 1000, 1250, 1500]
           },
           "legend": {"orient": "bottom-right", "format": ".1s"}
@@ -91,26 +91,26 @@
           "legend": {"orient": "left"},
           "scale": {
             "domain": [
-          "United States of America",
-          "China",
-          "Japan",
-          "Germany",
-          "India",
-          "Canada",
-          "Brazil",
-          "Italy",
-          "France",
-          "United Kingdom",
-          "Russia",
-          "Korea, Rep.",
-          "Spain",
-          "Australia",
-          "Mexico",
-          "Indonesia",
-          "Netherlands",
-          "Saudi Arabia",
-          "Turkey",
-          "Switzerland"
+              "United States of America",
+              "China",
+              "Japan",
+              "Germany",
+              "India",
+              "Canada",
+              "Brazil",
+              "Italy",
+              "France",
+              "United Kingdom",
+              "Russia",
+              "Korea, Rep.",
+              "Spain",
+              "Australia",
+              "Mexico",
+              "Indonesia",
+              "Netherlands",
+              "Saudi Arabia",
+              "Turkey",
+              "Switzerland"
             ],
             "range": [
               "#a50f15",
@@ -143,7 +143,7 @@
           {
             "field": "Population",
             "type": "quantitative",
-            "title": "Population"
+            "title": "Population","format": "1s"
           },
           {
             "field": "GDP Per Capita (U$dollor)",
