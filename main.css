@@ -19,16 +19,7 @@ h1, h2, h3
     padding: 0;
 }
 
-p, ol, ul
-{
-    margin-top: 0;
-}
 
-ol, ul
-{
-    padding: 0;
-    list-style: none;
-}
 
 p
 {
@@ -38,12 +29,9 @@ p
 a
 {
     color: #ee0000;
-}
-
-a:hover
-{
     text-decoration: none;
 }
+
 
 .container
 {
@@ -107,7 +95,7 @@ a:hover
 
 .v1{
     width: 1400px;
-    height: 600px;
+    height: 700px;
     text-align: center;
     font-size: 1em;
     color: #030007;
@@ -124,7 +112,7 @@ a:hover
     font-weight: lighter;
 }
 
-.v1 #part1 ul
+.v1 #part1 p
 {
     text-align: center;
     font-size: 1em;
@@ -133,9 +121,9 @@ a:hover
     font-weight: lighter;
 }
 
-.v1 #visualisation1{
+.v1 #vis1{
     text-align: center;
-    bottom: -2em;
+    bottom: 0em;
     font-size: 1em;
     color: #030007;
     font-weight: lighter; 
@@ -143,7 +131,7 @@ a:hover
 
 .v2{
     width: 1400px;
-    height: 600px;
+    height: 550px;
     text-align: center;
     font-size: 1em;
     color: #030007;
@@ -160,27 +148,28 @@ a:hover
     font-weight: lighter;
 }
 
-.v2 #visualisation2{
-    position: absolute;
-    left: 0em;
-    bottom: -25em;
+.v2 #vis2{
+    position: relative;
+    left: -15em;
+    bottom: 17em;
 }
 
-.v2 #part2{
+.v2 #part2 p{
     position: relative;
-    bottom: 0em;
-    margin-right: 20em;
-    text-align: right;
+    bottom: -3em;
+    left: 60em;
+    text-align: center;
     font-size: 1em;
-    margin-top: 3em;
     color: #000000;
     font-weight: lighter;
+    width: 400px;
 }
 
 .v3{
     width: 1400px;
-    height: 600px;
+    height: 800px;
     text-align: center;
+    right: 20em;
     font-size: 1em;
     color: #030007;
     font-weight: lighter;
@@ -196,26 +185,24 @@ a:hover
     font-weight: lighter;
 }
 
-.v3 #visualisation3{
-    position: absolute;
-    right: 0em;
-    bottom: -28em;
-}
-
-.v3 #part3{
-    position: relative;
-    bottom: 0em;
-    margin-left: 4em;
-    text-align: left;
+.v3 #part3 p
+{   position: relative;
+    bottom: -32em;
+    text-align: center;
     font-size: 1em;
-    margin-top: 3em;
     color: #000000;
     font-weight: lighter;
 }
 
+.v3 #vis3{
+    position: relative;
+    text-align: center;
+    bottom: 11em;
+}
+
 .v4{
     width: 1400px;
-    height: 800px;
+    height: 600px;
     text-align: center;
     font-size: 1em;
     color: #030007;
@@ -232,17 +219,55 @@ a:hover
     font-weight: lighter;
 }
 
-.v4 #part4 ul
-{   position: relative;
-    bottom: 16em;
+.v4 #vis4{
+    position: absolute;
+    left: 37em;
+    margin-top: 1.5em;
+}
+
+.v4 #part4 p{
+    position: relative;
+    bottom: -3em;
+    right: -6em;
     text-align: center;
     font-size: 1em;
     color: #000000;
     font-weight: lighter;
+    width: 400px;
 }
 
-.v4 #visualisation4{
-    position: relative;
+.v5{
+    width: 1400px;
+    height: 550px;
     text-align: center;
-    bottom: -2em;
+    font-size: 1em;
+    color: #030007;
+    font-weight: lighter;
+    overflow: hidden;
+    margin: 0em auto;
+}
+
+.v5 h1
+{
+    text-align: center;
+    font-size: 3.5em;
+    color: #09acec;
+    font-weight: lighter;
+}
+
+.v5 #vis5{
+    position: absolute;
+    margin-left: 1cm;
+    margin-top: 1.5em;
+}
+
+.v5 #part5 p{
+    position: relative;
+    bottom: -3em;
+    left: 55em;
+    text-align: center;
+    font-size: 1em;
+    color: #000000;
+    font-weight: lighter;
+    width: 400px;
 }
