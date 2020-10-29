@@ -1,0 +1,94 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "GDP Compare In 2019 For 10 Countries",
+  "autosize": "fit",
+  "width": 700,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jiaqicheningrid/Assignment2/main/data/gdp_vs_economy.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "Country_Name",
+        "oneOf": [
+          "United States of America",
+          "China",
+          "Japan",
+          "Germany",
+          "India",
+          "United Kingdom",
+          "France",
+          "Italy",
+          "Brazil",
+          "Canada"
+        ]
+      }
+    }
+  ],
+  "selection": {
+    "highlightCountry": {
+      "type": "multi",
+      "fields": ["Country_Name"],
+      "bind": "legend"
+    }
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Country_Name",
+      "type": "nominal",
+      "axis": {"labelAngle": 10},
+      "sort": "-y"
+    },
+    "y": {
+      "field": "GDP (millions)",
+      "type": "quantitative",
+      "title": "GDP (millions U$dollor)"
+    },
+    "color": {
+      "field": "Country_Name",
+      "type": "nominal",
+      "legend": {"orient": "left"},
+      "scale": {
+        "domain": [
+          "United States of America",
+          "China",
+          "Japan",
+          "Germany",
+          "India",
+          "United Kingdom",
+          "France",
+          "Italy",
+          "Brazil",
+          "Canada"
+        ],
+        "range": [
+          "#a50f15",
+          "#54278f",
+          "#f03b20",
+          "#006d2c",
+          "#000000",
+          "#fc9272",
+          "#08306b",
+          "#fb9a99",
+          "#7a0177",
+          "#e7298a"
+        ]
+      }
+    },
+    "tooltip": [
+      {"field": "Country_Name", "type": "nominal", "title": "Country"},
+      {
+        "field": "GDP (millions)",
+        "type": "quantitative",
+        "title": "GDP (millions U$dollor)"
+      }
+    ],
+    "opacity": {
+      "condition": {"selection": "highlightCountry", "value": 0.8},
+      "value": 0.06
+    }
+  },
+  "config": {}
+}
