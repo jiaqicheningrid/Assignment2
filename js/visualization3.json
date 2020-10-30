@@ -171,11 +171,11 @@
         "fontStyle": "italic"
       },
       "encoding": {
-        "text": {"field": "Population", "type": "quantitative"},
+        "text": {"field": "Population", "type": "quantitative","format": "1s"},
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country Name'] == 'China' || datum['Country Name'] =='United States of America' || datum['Country Name'] == 'India' || datum['Country Name'] == 'Switzerland'",
+            "test": "datum['Country Name'] == 'China' || datum['Country Name'] =='United States of America' || datum['Country Name'] == 'Switzerland'",
             "value": 1
           },
           "value": 0
