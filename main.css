@@ -256,9 +256,9 @@ a
 }
 
 .v5 #vis5{
-    position: absolute;
-    margin-left: 1cm;
-    margin-top: 1.5em;
+    position: relative;
+    bottom: 18em;
+    right: 17em;
 }
 
 .v5 #part5 p{
