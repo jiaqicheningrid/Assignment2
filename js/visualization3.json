@@ -135,8 +135,8 @@
           }
         },
         "opacity": {
-          "condition": {"selection": "Country Name_highlight", "value": 1},
-          "value": 0.1
+          "condition": {"selection": "Country Name_highlight", "value": 0.7},
+          "value": 0.05
         },
         "tooltip": [
           {"field": "Country Name", "type": "nominal", "title": "Country"},
