@@ -82,12 +82,13 @@
       {
         "field": "GDP (millions)",
         "type": "quantitative",
-        "title": "GDP (millions U$dollor)"
+        "title": "GDP (millions U$dollor)",
+         "format": "1s"
       }
     ],
     "opacity": {
       "condition": {"selection": "highlightCountry", "value": 0.8},
-      "value": 0.3
+      "value": 0.2
     }
   },
   "config": {}
