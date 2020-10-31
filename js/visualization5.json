@@ -87,7 +87,7 @@
     ],
     "opacity": {
       "condition": {"selection": "highlightCountry", "value": 0.8},
-      "value": 0.06
+      "value": 0.1
     }
   },
   "config": {}
