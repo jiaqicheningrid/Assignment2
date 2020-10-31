@@ -116,21 +116,24 @@
               "#54278f",
               "#a50f15",
               "#f03b20",
-              "#006d2c",
+              "gold",
               "#000000",
               "#fc9272",
-              "#08306b",
+              "slategray",
               "#fb9a99",
               "#7a0177",
               "#e7298a",
               "#02818a",
-              "#810f7c",
+              "cyan",
               "#980043",
               "#e31a1c",
-              "#253494",
-              "#3f007d",
+              "#df65b0",
+              "crimson",
               "#fc4e2a",
-              "#252525"
+              "#252525",
+              "mediumblue",
+              "#006d2c"
+
             ]
           }
         },
@@ -171,7 +174,7 @@
         "fontStyle": "italic"
       },
       "encoding": {
-        "text": {"field": "Population", "type": "quantitative","format": "1s"},
+        "text": {"field": "Population", "type": "quantitative", "format": "1s"},
         "color": {"value": "black"},
         "opacity": {
           "condition": {
