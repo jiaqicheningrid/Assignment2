@@ -80,29 +80,9 @@
           "mark": "point",
           "encoding": {
             "opacity": {
-              "condition": {
-                "selection": "labelLine", "value": 1
-              },
+              "condition": {"selection": "labelLine", "value": 1},
               "value": 0
-            },
-            "tooltip": [
-              {
-                "field": "Country_Name",
-                "type": "nominal",
-                "title": "Country"
-              },
-              {
-                "field": "Year",
-                "type": "temporal",
-                "title": "Year",
-                "timeUnit": "year"
-              },
-              {
-                "field": "GDP_Per",
-                "type": "quantitative",
-                "title": "GDP Per Capita (U$dollor)"
-              }
-            ]
+            }
           }
         }
       ]
@@ -124,7 +104,21 @@
             {
               "mark": {"type": "text", "align": "left", "dx": 5, "dy": -7},
               "encoding": {
-                "color": {"type": "nominal", "field": "Country_Name"}
+                "color": {"type": "nominal", "field": "Country_Name"},
+                 "tooltip": [
+              {"field": "Country_Name", "type": "nominal", "title": "Country"},
+              {
+                "field": "Year",
+                "type": "temporal",
+                "title": "Year",
+                "timeUnit": "year"
+              },
+              {
+                "field": "GDP_Per",
+                "type": "quantitative",
+                "title": "GDP Per Capita (U$dollor)"
+              }
+            ]
               }
             }
           ]
