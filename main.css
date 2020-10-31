@@ -46,7 +46,7 @@ a
     margin-right: 0.5em;
     margin-bottom: 2em;
     background-color:rgb(9, 86, 175); 
-    height:10px;
+    height:10px; 
     width: 1400px;
     border:none;
 }
@@ -92,6 +92,20 @@ a
     color: rgb(20, 20, 20);
     font-weight: lighter;
     font-family: cursive;
+}
+
+.intro #title{
+    text-align: center;
+    font-size: 3.5em;
+    color: #09acec;
+    font-weight: lighter;
+}
+
+.intro #part{
+    text-align: center;
+    font-size: 1em;
+    color: #000000;
+    font-weight: lighter;
 }
 
 .v1{
@@ -228,7 +242,7 @@ a
 
 .v4 #part4 p{
     position: relative;
-    bottom: -3em;
+    bottom: -5em;
     right: -6em;
     text-align: center;
     font-size: 1em;
@@ -258,13 +272,13 @@ a
 
 .v5 #vis5{
     position: relative;
-    bottom: 18em;
+    bottom: 16em;
     right: 17em;
 }
 
 .v5 #part5 p{
     position: relative;
-    bottom: -3em;
+    bottom: -5em;
     left: 55em;
     text-align: center;
     font-size: 1em;
