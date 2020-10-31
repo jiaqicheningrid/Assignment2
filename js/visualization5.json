@@ -26,6 +26,7 @@
       }
     }
   ],
+"layer": [{
   "selection": {
     "highlightCountry": {
       "type": "multi",
@@ -38,8 +39,7 @@
     "x": {
       "field": "Country_Name",
       "type": "nominal",
-      "axis": {"labelAngle": 10},
-      "sort": "-y"
+      "axis": {"labelAngle": 10}
     },
     "y": {
       "field": "GDP (millions)",
@@ -83,13 +83,44 @@
         "field": "GDP (millions)",
         "type": "quantitative",
         "title": "GDP (millions U$dollor)",
-         "format": "1s"
+        "format": "1s"
       }
     ],
     "opacity": {
       "condition": {"selection": "highlightCountry", "value": 0.8},
       "value": 0.2
     }
-  },
-  "config": {}
+  }},{
+      "mark": {
+      "type": "text",
+      "align": "left",
+      "baseline":"line-top",
+      "dx": -29,
+      "dy": -20,
+      "fontSize": 11.5,
+      "fontStyle": "italic"
+      },
+      "encoding": {
+        "x": {
+          "field": "Country_Name",
+          "type": "nominal",
+          "axis": {"labelAngle": 10}
+        },
+        "y": {
+          "field": "GDP (millions)",
+          "type": "quantitative",
+          "title": "GDP (millions U$dollor)"
+        },
+        "text": {"field": "GDP (millions)", "type": "nominal","format":"1s"},
+        "color": {"value": "black"},
+         "opacity": {
+          "condition": {
+            "test": "datum['Country_Name'] == 'China' || datum['Country_Name'] =='United States of America' || datum['Country_Name'] == 'Canada'",
+            "value": 1
+          },
+          "value": 0
+        }
+      }
+    }
+  ]
 }
