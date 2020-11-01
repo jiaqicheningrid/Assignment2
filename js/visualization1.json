@@ -37,7 +37,7 @@
         "size": {
           "field": "GDP (millions)",
           "type": "quantitative",
-          "title": "GDP(Million US$)",
+          "title": "GDP(Million USD)",
           "legend": {"orient": "bottom-left", "format": ".1s"},
           "scale": {"type": "threshold", "domain": [100000, 1000000, 5000000]}
         },
@@ -46,7 +46,7 @@
           {
             "field": "GDP (millions)",
             "type": "quantitative",
-            "title": "GDP(Million US$)",
+            "title": "GDP(Million USD)",
             "format": "1s"
           },
           {"field": "properties.NAME", "type": "nominal", "title": "Country"}
