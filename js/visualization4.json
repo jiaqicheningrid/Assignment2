@@ -48,7 +48,12 @@
               "Germany",
               "India"
             ],
-            "range": ["#54278f", "#a50f15", "#f03b20", "#006d2c", "#000000"]
+            "range": [              
+              "#54278f",
+              "#a50f15",
+              "#f03b20",
+              "gold",
+              "#000000"]
           }
         },
         "opacity": {
@@ -105,20 +110,24 @@
               "mark": {"type": "text", "align": "left", "dx": 5, "dy": -7},
               "encoding": {
                 "color": {"type": "nominal", "field": "Country_Name"},
-                 "tooltip": [
-              {"field": "Country_Name", "type": "nominal", "title": "Country"},
-              {
-                "field": "Year",
-                "type": "temporal",
-                "title": "Year",
-                "timeUnit": "year"
-              },
-              {
-                "field": "GDP_Per",
-                "type": "quantitative",
-                "title": "GDP Per Capita (U$dollor)"
-              }
-            ]
+                "tooltip": [
+                  {
+                    "field": "Country_Name",
+                    "type": "nominal",
+                    "title": "Country"
+                  },
+                  {
+                    "field": "Year",
+                    "type": "temporal",
+                    "title": "Year",
+                    "timeUnit": "year"
+                  },
+                  {
+                    "field": "GDP_Per",
+                    "type": "quantitative",
+                    "title": "GDP Per Capita (U$dollor)"
+                  }
+                ]
               }
             }
           ]
