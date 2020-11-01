@@ -54,13 +54,13 @@
     "x": {
       "field": "GDP(million)",
       "type": "quantitative",
-      "title": "GDP (millions U$dollor)",
+      "title": "GDP (millions USD)",
       "axis": {"tickCount": 4}
     },
     "y": {
       "field": "GDP Per Capita (U$dollor)",
       "type": "quantitative",
-      "title": "GDP Per Capita (U$dollor)",
+      "title": "GDP Per Capita (USD)",
       "axis": {"tickCount": 3}
     }
   },
@@ -133,7 +133,6 @@
               "#252525",
               "mediumblue",
               "#006d2c"
-
             ]
           }
         },
@@ -152,12 +151,12 @@
           {
             "field": "GDP Per Capita (U$dollor)",
             "type": "quantitative",
-            "title": "GDP Per Capita (U$dollor)"
+            "title": "GDP Per Capita (USD)"
           },
           {
             "field": "GDP(million)",
             "type": "quantitative",
-            "title": "GDP (millions U$dollor)",
+            "title": "GDP (millions USD)",
             "format": "1s"
           }
         ]
@@ -193,12 +192,12 @@
           {
             "field": "GDP Per Capita (U$dollor)",
             "type": "quantitative",
-            "title": "GDP PerCapita"
+            "title": "GDP PerCapita (USD)"
           },
           {
             "field": "GDP(million)",
             "type": "quantitative",
-            "title": "GDP (millions U$dollor)",
+            "title": "GDP (millions USD)",
             "format": "1s"
           }
         ]
