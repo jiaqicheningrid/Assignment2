@@ -45,7 +45,7 @@
         "y": {
           "field": "GDP (millions)",
           "type": "quantitative",
-          "title": "GDP (millions U$dollor)"
+          "title": "GDP (millions USD)"
         },
         "color": {
           "field": "Country_Name",
@@ -83,7 +83,7 @@
           {
             "field": "GDP (millions)",
             "type": "quantitative",
-            "title": "GDP (millions U$dollor)",
+            "title": "GDP (millions USD)",
             "format": "1s"
           }
         ],
@@ -112,7 +112,7 @@
         "y": {
           "field": "GDP (millions)",
           "type": "quantitative",
-          "title": "GDP (millions U$dollor)"
+          "title": "GDP (millions USD)"
         },
         "text": {"field": "GDP (millions)", "type": "nominal", "format": "1s"},
         "color": {"value": "black"},
