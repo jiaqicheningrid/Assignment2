@@ -35,7 +35,7 @@
         "color": {
           "field": "2019",
           "type": "quantitative",
-          "title": "GDP Per Capita(US$)",
+          "title": "GDP Per Capita(USD)",
           "legend": {"orient": "bottom-left"},
           "scale": {
             "type": "threshold",
@@ -47,7 +47,7 @@
           {
             "field": "2019",
             "type": "quantitative",
-            "title": "GDP Per Capita(US$)"
+            "title": "GDP Per Capita(USD)"
           },
           {"field": "properties.NAME", "type": "nominal", "title": "Country"}
         ]
